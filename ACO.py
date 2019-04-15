@@ -115,7 +115,7 @@ class TSP_ACO (object):
         curruntCity  = self.ant[antNumber][-1]
         visitedCity  = set(self.ant[antNumber])
         allowedCity  = set(range(0,self.mapSize)) - visitedCity
-        # 计算启发式参数，距离越近概率越大，映射到0-10
+        # 计算启发式参数，距离越近概率越大
         distanceSum  = float(0)
         for city in allowedCity:
             distanceSum += self.citymap[curruntCity][city]
