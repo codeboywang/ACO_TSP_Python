@@ -1,7 +1,7 @@
 import numpy as np
 import random
 
-class TSP_AOC (object):
+class TSP_ACO (object):
     def __init__(self):
         self.Maximum  =  np.inf    # 设定最大值
         self.readCitMapfromTxt()
@@ -168,6 +168,6 @@ class TSP_AOC (object):
             self.citycoordinates.append({"x":int(triple[1]),"y":int(triple[2])})
 
 
-obj_AOC = TSP_AOC()
+obj_ACO = TSP_ACO()
 
-obj_AOC.doACO()
+obj_ACO.doACO()
